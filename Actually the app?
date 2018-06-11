@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Special Diet and Allergy App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+ 
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+        </head>
+ 
+        <body>
+ 
+          <!-- PAGE ONE -->
+        <div data-role="page" id="pageone"> <!-- page name -->
+            <div data-role="header">
+                <h1>Special diet or allergy</h1> <!-- title -->
+            </div><!-- /header -->
+ 
+           <div data-role="content">
+             <p>What is your special diet or allergy?</p> <!-- ask first question -->
+ 
+import java.util.Scanner;
+ 
+class GetInputFromUser
+{
+   public static void main(String args[])
+   {
+      String a;
+      Scanner in = new Scanner(System.in);
+      System.out.println("Enter your allergy or special diet");<!--prints out the phrase that is in the parenthesis-->
+      a = in.nextLine();<!--a is whatever the user enters as their special diet or allergy-->
+      System.out.println("You entered "+ a);><!--prints out whatever the user has inputted which is "a".-->
+ 
+             <p>Is this correct</p> <!-- ask first question -->
+             <a href="#pagetwo"
+             data-role="button">Yes</a> <!-- yes button-->
+             <a href="#pageone"
+             data-role="button">No</a><!--no button-->
+ 
+      </div><!-- /content -->
+ 
+            <div data-role="footer" data-position="fixed">
+                <p>UT Austin DIY Diagnostics Research Stream</p>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+ 
+          <!-- PAGE TWO -->
+        <div data-role="page" id="pagetwo"> <!-- page name -->
+            <div data-role="header">
+                <h1> Does a restaurant or food contain your allergen?</h1> <!-- title -->
+            </div><!-- /header -->
+ 
+           <div data-role="content">
+             <p>Enter a restaurant or food. The app will tell you if the food/restaurant contains or serves food that contains your allergen</p> <!-- ask second question -->
+ 
+import java.util.Scanner;
+ 
+class GetInputFromUser
+{
+   public static void main(String args[])
+   {
+ 
+      String a;
+ 
+      Scanner in = new Scanner(System.in);
+ 
+      System.out.println("Enter restaurant or food");
+      a = in.nextLine();
+      System.out.println("You entered "+ a);>
+ 
+             <a href="#pagethree"
+             data-role="button">Yes</a> <!-- yes button, then links to next page -->
+             <a href="#pagetwo"
+             data-role="button">No</a> <!-- no button -->
+      </div><!-- /content -->
+ 
+            <div data-role="footer" data-position="fixed">
+                <p>UT Austin DIY Diagnostics Research Stream</p>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+   <!-- </body>
+</html>
+
+
+
+
